@@ -39,7 +39,9 @@ Research-Gotchas is the gate-1 fix. PR-Gotchas is the gate-2 fix. Together they 
 
 ```
 oss-autopilot-starter/
-├── README.md              <- you are here
+├── README.md              <- you are here (for humans)
+├── CLAUDE.md              <- entry point for agents (Claude Code, Codex, Cursor, etc.)
+├── AGENTS.md              <- thin pointer to CLAUDE.md (one source of truth)
 ├── LICENSE                <- MIT
 │
 ├── core/                  <- start here, these are the system files
