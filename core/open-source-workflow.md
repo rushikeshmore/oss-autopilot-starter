@@ -84,15 +84,27 @@ git pull upstream <default-branch>
 
 Each repo has a dedicated `<repo>-PR-Gotchas.md` file co-located with its folder. The file contains a Pre-Push Checklist + lessons from real PRs to that repo. Open the matching file and run its checklist before push.
 
-| Repo | File | Location |
-|---|---|---|
-| Gutenberg | [gutenberg-PR-Gotchas](../examples/wordpress/gutenberg-PR-Gotchas.md) | `examples/wordpress/` |
-| Openverse | [openverse-PR-Gotchas](../examples/wordpress/openverse-PR-Gotchas.md) | `examples/wordpress/` |
-| Greenpeace planet4 | [planet4-PR-Gotchas](../examples/greenpeace/planet4-PR-Gotchas.md) | `examples/greenpeace/` |
-| Shopify theme-tools | [theme-tools-PR-Gotchas](../examples/shopify/theme-tools-PR-Gotchas.md) | `examples/shopify/` |
-| Shopify (general / multi-repo) | [shopify-oss-PR-Gotchas](../examples/shopify/shopify-oss-PR-Gotchas.md) | `examples/shopify/` |
+Example layout (mirror this for any new ecosystem you target):
 
-For Shopify repos without a dedicated file (Shopify-AI-Toolkit, shop-chat-agent, agent-skills, etc.), use [shopify-oss-PR-Gotchas](../examples/shopify/shopify-oss-PR-Gotchas.md). Create a per-repo file once that repo has 2+ specific gotchas worth capturing.
+```
+examples/<ecosystem>/
+├── _skills/                              <- one contribution skill per repo
+│   ├── <repo-A>-contribution.md
+│   └── <repo-B>-contribution.md
+├── <repo-A>/
+│   └── <repo-A>-PR-Gotchas.md           <- gate 2 for repo A
+└── <repo-B>/
+    └── <repo-B>-PR-Gotchas.md           <- gate 2 for repo B
+```
+
+Worked example (WordPress) in this repo:
+
+| Repo | Contribution Skill | PR-Gotchas |
+|---|---|---|
+| Gutenberg | [gutenberg-contribution](../examples/wordpress/_skills/gutenberg-contribution.md) | [gutenberg-PR-Gotchas](../examples/wordpress/gutenberg/gutenberg-PR-Gotchas.md) |
+| Openverse | [openverse-contribution](../examples/wordpress/_skills/openverse-contribution.md) | [openverse-PR-Gotchas](../examples/wordpress/openverse/openverse-PR-Gotchas.md) |
+
+For any repo without a dedicated PR-Gotchas file yet, create one as soon as the first lesson surfaces. Empty file is better than no file.
 
 If you encounter a NEW PR-time gotcha (rework requested, change closed unmerged, surprising review feedback): add it to the matching gotchas file after the PR closes. Cumulative file > losing the lesson.
 

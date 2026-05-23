@@ -48,22 +48,21 @@ oss-autopilot-starter/
 │   ├── pr-monitoring.md           <- post-PR escalation cadence
 │   └── Research-Gotchas.md        <- gate 1: repo qualification checks
 │
-└── examples/              <- real per-repo skills + gotchas, lessons from actual PRs
-    ├── wordpress/
-    │   ├── gutenberg-contribution.md
-    │   ├── gutenberg-PR-Gotchas.md
-    │   ├── openverse-contribution.md
-    │   ├── openverse-PR-Gotchas.md
-    │   └── agent-skills-contribution.md
-    ├── greenpeace/
-    │   ├── planet4-contribution.md
-    │   └── planet4-PR-Gotchas.md
-    └── shopify/
-        ├── shopify-oss-contribution.md
-        ├── shopify-oss-PR-Gotchas.md
-        ├── theme-tools-contribution.md
-        └── theme-tools-PR-Gotchas.md
+└── examples/
+    └── wordpress/         <- worked example ecosystem (mirror this layout for any new one)
+        ├── _skills/
+        │   ├── gutenberg-contribution.md
+        │   ├── openverse-contribution.md
+        │   └── agent-skills-contribution.md
+        ├── gutenberg/
+        │   └── gutenberg-PR-Gotchas.md
+        └── openverse/
+            └── openverse-PR-Gotchas.md
 ```
+
+The `examples/wordpress/` structure is the convention: `_skills/` holds one contribution skill per target repo; each target repo gets its own folder for its PR-Gotchas (and any future per-repo notes, logs, etc.). Mirror this pattern when you target a new ecosystem (`examples/<your-ecosystem>/_skills/` + `examples/<your-ecosystem>/<repo>/`).
+
+PR-receipts from Greenpeace and Shopify (8 merged total) are linked in the "Proof of system" section below — same system, different ecosystems. Add per-ecosystem folders to your own fork as you expand.
 
 ## Quick start (adapt for your setup)
 
@@ -75,8 +74,8 @@ oss-autopilot-starter/
    - `<your-code-path>` → where you clone repos locally
    - `<your-vault>` → your knowledge vault name (Obsidian, Logseq, plain folder, etc.)
 3. **Pick your first target repo.** Run the Research-Gotchas gates BEFORE writing code. If the repo fails (auto-close bot, dormant, scope-debate culture), pick a different one.
-4. **Create a `<repo>-contribution.md` skill file** for the target. Use the examples as templates. Cover: identity rule, local dev setup, PR flow, coding standards, testing, communication channels.
-5. **Create an empty `<repo>-PR-Gotchas.md` file** for the target. It starts empty. You'll add entries as PRs teach you lessons.
+4. **Create a `<repo>-contribution.md` skill file** for the target. Use the [WordPress examples](./examples/wordpress/_skills/) as templates. Convention: `examples/<your-ecosystem>/_skills/<repo>-contribution.md`. Cover: identity rule, local dev setup, PR flow, coding standards, testing, communication channels.
+5. **Create an empty `<repo>-PR-Gotchas.md` file** for the target, co-located in its own folder. Convention: `examples/<your-ecosystem>/<repo>/<repo>-PR-Gotchas.md`. It starts empty. You'll add entries as PRs teach you lessons.
 6. **Wire the skills into your agent's autoload:**
    - **Claude Code**: place in `~/.claude/skills/` or per-project `.claude/skills/`
    - **Cursor**: use `.cursorrules` or rules

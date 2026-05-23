@@ -9,7 +9,7 @@ tags: [oss, gotchas, pr-time, gutenberg, wordpress]
 
 > Lessons from real PRs to WordPress/gutenberg that needed rework or were closed. Check before every push. Add new entries as you ship more PRs.
 
-> Related: [Research-Gotchas](../../core/Research-Gotchas.md) for repo-qualification gotchas (gate 1, runs BEFORE starting work). This file is gate 2 (PR-time, runs BEFORE pushing). For the general contribution workflow, see [gutenberg-contribution](./gutenberg-contribution.md).
+> Related: [Research-Gotchas](../../../core/Research-Gotchas.md) for repo-qualification gotchas (gate 1, runs BEFORE starting work). This file is gate 2 (PR-time, runs BEFORE pushing). For the general contribution workflow, see [gutenberg-contribution](../_skills/gutenberg-contribution.md).
 
 ## Pre-Push Checklist (run before every `gh pr create`)
 

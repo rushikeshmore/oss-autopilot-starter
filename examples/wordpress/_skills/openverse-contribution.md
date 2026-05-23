@@ -165,6 +165,6 @@ ov just frontend/run test:storybook
 
 ## PR Gotchas
 
-For PR-time gotchas to this repo (pre-push checklist + lessons from past PRs), see [openverse-PR-Gotchas](./openverse-PR-Gotchas.md) in `./` (this folder). Check it before every `gh pr create`. After each PR closes, add new lessons there.
+For PR-time gotchas to this repo (pre-push checklist + lessons from past PRs), see [openverse-PR-Gotchas](../openverse/openverse-PR-Gotchas.md) in `./` (this folder). Check it before every `gh pr create`. After each PR closes, add new lessons there.
 
-This is gate 2 of the contribution lifecycle. Gate 1 is [Research-Gotchas](../../core/Research-Gotchas.md) (qualify the repo BEFORE starting work).
+This is gate 2 of the contribution lifecycle. Gate 1 is [Research-Gotchas](../../../core/Research-Gotchas.md) (qualify the repo BEFORE starting work).
