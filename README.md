@@ -99,17 +99,6 @@ Across April-May 2026, 8 PRs merged + 2 active across WordPress and Greenpeace:
 - [greenpeace/planet4-master-theme #2962](https://github.com/greenpeace/planet4-master-theme/pull/2962) — Align license metadata with GPL-3.0-or-later
 - [greenpeace/planet4-master-theme #2963](https://github.com/greenpeace/planet4-master-theme/pull/2963) — Correct misleading docblocks in Like SQL class
 
-### Active / In Review (2)
-- [WordPress/openverse #5570](https://github.com/WordPress/openverse/pull/5570) — Audio thumbnail accessibility (aria-hidden)
-- [Shopify/theme-tools #1182](https://github.com/Shopify/theme-tools/pull/1182) — Parse style body as Liquid inside `{% liquid %}` tags
-
-### Closed unmerged (5) — these became gotchas
-- WordPress/gutenberg [#77183](https://github.com/WordPress/gutenberg/pull/77183) + [#77184](https://github.com/WordPress/gutenberg/pull/77184) — direction-declined by maintainer (basis of Gutenberg PR-Gotchas #5)
-- greenpeace/planet4-master-theme [#2964](https://github.com/greenpeace/planet4-master-theme/pull/2964) — AGENTS.md soft-declined (basis of planet4 PR-Gotchas #5)
-- [planet4-child-theme-korea #22](https://github.com/greenpeace/planet4-child-theme-korea/pull/22) — dormant repo per stale-PR SOP
-- [Shopify/Shopify-AI-Toolkit #18](https://github.com/Shopify/Shopify-AI-Toolkit/pull/18) — auto-closed by bot (basis of Research-Gotchas #1)
-
-Every closed-unmerged PR became a lesson in a gotchas file. The system is the moat — each failure makes the next one less likely.
 
 ## Tools used
 
